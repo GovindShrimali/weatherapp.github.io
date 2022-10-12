@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	background-image: 
+}
+.container::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url(image2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	opacity: 0.8;
+}
+.weather{
+	background-color: white;
+	z-index: 200;
+	display: flex;
+	padding: 16px 16px;
+	border-radius: 7px;
+	opacity: 0.5;
+
+}
+.weather > div{
+	margin: 0.625rem;
+}
+.weather1{
+	font-size: 4rem;
+}
+.weather p{
+	font-size: 2rem;
+}
+.weather span{
+	font-size: 1.2rem;
+}
+.weather3 span{
+	margin: 0.7rem;
+}
+.weather3 img{
+	/*width:2rem;*/
+}
+
+nav{
+	height: 90px;
+	box-shadow: 0 0 25px rgba(0,0,0,0.18);
+	/*padding: 0.5rem 0;*/
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	background-color: rgba(180, 177, 177, 0.075);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px 100px 0 0;
+}
+
+nav form{
+	width: 70%;
+	/*background-color: white;*/
+	grid-template-columns: 5fr 1fr;
+	display: grid;
+}
+
+.searchfield{
+	font-size: 0.85rem;
+	outline: none;
+	color: white;
+	background-color: transparent;
+	padding: 0.5rem 0;
+	border:none;
+	border-bottom: 1px solid white;
+	width: 97%
+}
+
+nav form button{
+	background: linear-gradient(90deg, #0162c8, #55e7fc);
+	border:none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0 25px 25px 0;
+	font-size: 0.85rem;
+	color: white;
+	overflow: hidden;
+	z-index: 240;
+	display: inline-block;
+	position: relative;
+}
+nav form button:hover{
+	/*background: white;*/
+	color:black;
+}
+
+button span{
+	position: absolute;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: animate 1s linear infinite;
+}
+@keyframes animate{
+	0%{
+		width: 0px;
+		height: 0px;
+		opacity: 0.1;
+	}
+	100%{
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
